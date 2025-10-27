@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  desktop-tests:
+    build: .
+    container_name: wdio-desktop-tests
+    command: npm run test:desktop
+    tty: true
+
+  mobile-tests:
+    build: .
+    container_name: wdio-mobile-tests
+    command: npm run test:mobile
+    tty: true
+
+
+
